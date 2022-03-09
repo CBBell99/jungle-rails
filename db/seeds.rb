@@ -128,8 +128,7 @@ cat3.products.create!({
   name:  'Red Bookshelf',
   description: Faker::Hipster.paragraph(4),
   image: open_asset('furniture3.jpg'),
-  quantity: 0,
-  # quantity: 23,
+  quantity: 23,
   price: 2_483.75
 })
 
