@@ -10,7 +10,17 @@
     <tr>
       <th colspan="2"><%= @products.count %></th>
       <th colspan="2"><%= @categories.count %></th>
+      
+      
     </tr>
+      <tr>
+      <th colspan="2"><button class="btn primary"><%= link_to "Products" , [:admin, :products]%></button></th>
+      <th colspan="2"><% Category.all.each do |category| %>
+             <button class="btn primary"> <%= link_to category.name, category %></button>
+            <% end %>
+      </th>      
+      </tr>
+            
   </tbody>
 </table>
 </div>
