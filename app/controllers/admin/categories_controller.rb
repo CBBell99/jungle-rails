@@ -25,6 +25,6 @@ http_basic_authenticate_with :name => ENV['ADMIN_USERNAME'], :password => ENV['A
       params.require(:category).permit(
         :name
       )
-    end  
-
+    end
+    
 end
