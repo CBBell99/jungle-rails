@@ -30,13 +30,12 @@
         </li>
         <li>
         
-<% if current_user %>
-            <li> <%= link_to "Logout", '/logout' %> </li>
-            <li class="logged-in"> Signed in as <%= current_user.name %></li>
-        <% else %>
+          <% if current_user %>
+            <li> <%= link_to "Logout #{current_user.name}", '/logout' %> </li>
+          <% else %>
             <li> <%= link_to 'Login', '/login' %> </li>
             <li> <%= link_to 'Signup', '/signup' %> </li>
-        <% end %>
+          <% end %>
         
         </li>
       </ul>
