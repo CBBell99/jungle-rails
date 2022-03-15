@@ -7,14 +7,12 @@ RSpec.describe Product, type: :model do
     it 'should save a product when all fields are entered' do
       @category = Category.new(name: 'Vehicles')
       @product = Product.new(name: 'Hoverboard', price: 500, quantity: 500, category: @category)
-      # puts -----------
-      # puts @product.category
       expect(@product).to be_valid
     end   
     
     it 'should fail if a name is not entered' do 
       @category = Category.new(name: 'Vehicles')
-      @product = Product.new(name: "" , price: 500 , quantity: 500, category: @category)
+      @product = Product.new(name: nil, price: 500 , quantity: 500, category: @category)
       expect(@product).to_not be_valid
       expect(@product.errors.full_messages).to include("Name can't be blank")
     end
