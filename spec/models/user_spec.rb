@@ -58,8 +58,8 @@ RSpec.describe User, type: :model do
         email: "n.uzumaki@example.com", password: "password",
         password_confirmation: "password")
       @user.save
-      @user = User.authenticate_with_credentials("n.uzumaki@example.com", "assword")
-      expect(@user).not_to be(nil)
+      user = User.authenticate_with_credentials("n.uzumaki@example.com", "password")
+      expect(user).not_to be(nil)
     end
     
     it 'Should not pass with incorrect password' do

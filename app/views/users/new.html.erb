@@ -1,7 +1,11 @@
 <h1>Signup!</h1>
 
 <%= form_for :user, url: '/users' do |f| %>
-
+<% if flash.alert %>
+<div class="alert alert-danger" role="alert">
+      <%= flash.alert %> 
+    </div>
+<% end %>
 <div class="container">
   First Name<div><%= f.text_field :first_name %></div>
   Last Name<div><%= f.text_field :last_name %></div>
