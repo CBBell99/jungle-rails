@@ -15,7 +15,7 @@ RSpec.feature "AddToCarts", type: :feature, js: true do
     end
   end
   
-  scenario "They see all products" do
+  scenario "Add products to cart" do
     # ACT
     visit root_path
     
