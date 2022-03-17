@@ -2,7 +2,22 @@
 
 A mini e-commerce application built with Rails 4.2 for purposes of teaching Rails by example.  A user can log in and make "purchases" using a Stripe test account.  An Admin can create new products and product categories.   
 
+# Screenshots
 
+### Jungle Front Page
+![Front page](https://raw.githubusercontent.com/CBBell99/jungle-rails/master/docs/Screen%20Shot%202022-03-16%20at%203.10.00%20PM%20(2).png)
+
+### Full cart
+![cart](https://raw.githubusercontent.com/CBBell99/jungle-rails/master/docs/Screen%20Shot%202022-03-16%20at%204.42.58%20PM%20(2).png)
+
+### Purchasing
+![purchase](https://raw.githubusercontent.com/CBBell99/jungle-rails/master/docs/Screen%20Shot%202022-03-16%20at%204.43.23%20PM%20(2).png)
+
+
+![purchase complete](https://raw.githubusercontent.com/CBBell99/jungle-rails/master/docs/Screen%20Shot%202022-03-16%20at%203.09.29%20PM%20(2).png)
+
+### Admin
+![admin product page](https://raw.githubusercontent.com/CBBell99/jungle-rails/master/docs/Screen%20Shot%202022-03-16%20at%203.09.29%20PM%20(2).png)
 
 ## Additional Steps for Apple M1 Machines
 
